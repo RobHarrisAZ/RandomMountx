@@ -168,7 +168,7 @@ function RM_Object:IsAssistantOut()
 	return (GetActiveCollectibleByType(COLLECTIBLE_CATEGORY_TYPE_ASSISTANT) ~= 0)
 end
 function RM_Object:SummonMount()
-	if not self:InPvP() then
+	--if not self:InPvP() then
 		local t = {}
 		for id,obj in pairs(self.settings.mounts) do
 			if obj.use then
@@ -195,7 +195,7 @@ function RM_Object:SummonMount()
 			end
 		
 		end
-	end
+	--end
 end
 function RM_Object:SummonPet()
 	if not self:InPvP() then
